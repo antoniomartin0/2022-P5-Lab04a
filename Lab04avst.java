@@ -23,9 +23,6 @@ public class Lab04avst
 
         double denominator = Math.pow(1 + annualRate,numMonths);
 
-
-
-        // monthly payment
         double temp = 3.141529;
         System.out.println(temp);
         temp *=100;
@@ -34,6 +31,26 @@ public class Lab04avst
         System.out.println(temp);
         temp /= 100;
         System.out.println(temp);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        System.out.println("Principle: " + principal);
+        System.out.println("Annual Rate: " + annualRate);
+        System.out.println("Number of Years: " + numYears);
+        System.out.println("Monthly Payment: " + monthlyRate);
+
+
 
 
 
