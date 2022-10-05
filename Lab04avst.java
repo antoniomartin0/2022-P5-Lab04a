@@ -12,8 +12,8 @@ public class Lab04avst
         double principal  = 250000;
         double annualRate = 4.85;
         double numYears   = 30;
+        double monthlyRate = 1319.2295689273974;
 
-        double monthlyRate = (annualRate / 100) / 12;
 
         double numMonths = numYears * 12;
         double numerator = monthlyRate * Math.pow(1 + monthlyRate,numMonths);
@@ -21,7 +21,10 @@ public class Lab04avst
         System.out.println(numerator);
         System.out.println(monthlyRate);
 
-        double denominator = Math.pow(1 + annualRate,numMonths);
+        double denominator = Math.pow(1 + annualRate,numMonths - 1);
+
+
+
 
         double temp = 3.141529;
         System.out.println(temp);
@@ -31,19 +34,6 @@ public class Lab04avst
         System.out.println(temp);
         temp /= 100;
         System.out.println(temp);
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         System.out.println("Principle: " + principal);
         System.out.println("Annual Rate: " + annualRate);
